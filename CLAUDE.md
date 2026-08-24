@@ -1,16 +1,26 @@
-# Project Overview
+# Orchestration Fundamentals for Agentic Development — Setup
 
-Standalone setup and environment verification repository for **Orchestration Fundamentals for Agentic Development**.
+Standalone environment setup and verification repository for participants of the four-hour course **Orchestration Fundamentals for Agentic Development**. Contains OS-specific installation guides and checklists to verify the required tools (Git, Node.js, Claude Code, IDE) are ready before class.
 
-## Directory Layout
+## Tech Stack
 
-- `llm-context/`: Stores context for LLM agents.
-- Installation and environment verification materials belong here.
+- **Primary Format:** Markdown
+- **Scripts:** Bash, Python
 
-## Verification Steps
+## Project Structure
 
-TBD
+| Path | Purpose |
+|:---|:---|
+| `install/` | OS-specific installation guides |
+| `llm-context/` | Stores context for LLM agents |
+| `scripts/` | Helper scripts (diagram/slide building) |
 
-## Content Guidelines
+## Key Commands
 
-Keep setup instructions standalone because this repository may be distributed before the course companion is available.
+None (Setup repository). Verification is manually driven via the checklist in `Welcome.md`.
+
+## Conventions
+
+- **Standalone Guides:** Keep setup instructions standalone; this repository may be distributed before the course companion is available.
+- **Links:** Ensure links to installation guides remain valid and relative.
+- **Linting:** Markdown is linted per `.markdownlint.json`.
