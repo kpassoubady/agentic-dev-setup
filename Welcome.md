@@ -1,42 +1,50 @@
-# Welcome to Orchestration Fundamentals for Agentic Development
+# Welcome to Orchestration Fundamentals for Agentic Development!
 
-Welcome to the **Orchestration Fundamentals for Agentic Development** course! We are excited to have you join us for this hands-on learning experience. 
+To ensure a smooth and productive learning experience, please complete the setup before class.
 
-## Course Overview
+## 📋 Course Overview
 
-This course is designed for developers, tech leads, and engineers looking to move from single-prompt AI assistance to orchestrating multiple agents on larger tasks. You will practice breaking features into agent-ready units of work, choosing the right model for each task, and running multiple agent sessions in parallel using Claude Code.
+Review the [course outline](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md) for the objectives and schedule.
 
-## Pre-Class Setup
+This is a four-hour course delivered twice in one day to separate morning and afternoon cohorts. You will use Claude Code, Git, Bash 3.2 or later, a standard terminal, and your preferred code editor to plan and coordinate multi-agent development work.
 
-To ensure that we can dive straight into the hands-on labs during our session, we ask that you complete the necessary setup before class begins. The course utilizes a single toolchain stack (Node.js, Git, Claude Code, and a code editor like VS Code).
+## 🛠️ Pre-Class Setup (Required)
 
-Please review the installation guide for your operating system:
+Start with the [installation guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md).
 
-- 🍎 [macOS Installation Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-mac.md)
-- 🪟 [Windows Installation Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-win.md)
+| Category | Tool |
+|:---|:---|
+| Version control | Git |
+| Shell | Bash 3.2 or later; Git Bash on Windows |
+| Agentic development | Claude Code with an eligible authenticated account |
+| Editor | Any code editor; Visual Studio Code recommended |
 
-*(You can also refer to the [Main Setup Document](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md) for a complete overview).*
+Follow the operating-system-specific instructions for macOS or Windows. After installing the tools, open the [verification project](https://github.com/kpassoubady/agentic-dev-setup/tree/main/test-setup) and run `bash test-setup/verify.sh` from the repository root.
 
-## Completion Checklist
+## ✅ Checklist Before Class
 
-Please ensure all the following items are checked off before arriving at class:
+- [ ] Confirm that your computer meets the operating-system, memory, and internet requirements in the installation guide.
+- [ ] Install Git and confirm that `git --version` prints a version.
+- [ ] Confirm that `bash --version` reports Bash 3.2 or later.
+- [ ] Install Claude Code with the native installer and confirm that `claude --version` prints a version.
+- [ ] Run `claude` and complete authentication with the account approved for the course.
+- [ ] Install and open your preferred code editor.
+- [ ] Run `bash test-setup/verify.sh` from the repository root.
+- [ ] Confirm that the test prints `SUCCESS: All required command-line tools are installed.`
 
-| Task | Command / Instructions | Status |
-|---|---|---|
-| **Git** | `git --version` should return a valid version | [ ] |
-| **Node.js** | `node -v` and `npm -v` should return valid versions | [ ] |
-| **Claude Code** | `npm install -g @anthropic-ai/claude-code` | [ ] |
-| **Claude Authentication** | Run `claude` in your terminal and log in | [ ] |
-| **Code Editor** | Visual Studio Code (recommended) installed | [ ] |
+## 📚 Quick Links
 
-## Quick Links
+| Resource | Link |
+|:---|:---|
+| Course outline | [View outline](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md) |
+| Installation guide | [View guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md) |
+| macOS guide | [View macOS instructions](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-mac.md) |
+| Windows guide | [View Windows instructions](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-win.md) |
+| Verification project | [Open setup test](https://github.com/kpassoubady/agentic-dev-setup/tree/main/test-setup) |
+| Verification instructions | [View setup test README](https://github.com/kpassoubady/agentic-dev-setup/blob/main/test-setup/README.md) |
 
-- [Main Setup Document](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md)
-- [macOS Installation Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-mac.md)
-- [Windows Installation Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-win.md)
+## 🆘 Need Help?
 
-## Need Help?
+If you encounter any issues during setup, please don't hesitate to reach out before the training day.
 
-If you encounter any issues during the installation process or have questions about the pre-class requirements, please don't hesitate to reach out to your instructor or teaching assistant. 
-
-We look forward to seeing you in class!
+Looking forward to seeing you in class! 🚀

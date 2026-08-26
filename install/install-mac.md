@@ -1,63 +1,87 @@
 # macOS Installation Guide
 
-Follow these steps to install the necessary tools and dependencies for the Orchestration Fundamentals for Agentic Development course on your macOS machine.
+Use these steps to prepare macOS for **Orchestration Fundamentals for Agentic Development**.
 
-## 1. Install Homebrew (If not already installed)
+## 1. Confirm the system requirements
 
-Homebrew is a package manager for macOS that makes installing tools easy. Open your terminal and run:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-## 2. Install Git
-
-Git is required for version control and branching during the labs.
+Claude Code requires macOS 13 or later, 4 GB or more of memory, and internet access. Check your macOS version in Terminal:
 
 ```bash
-brew install git
+sw_vers -productVersion
 ```
 
-Verify the installation:
+## 2. Install and verify Git
+
+First check whether Git is already available:
+
 ```bash
 git --version
 ```
 
-## 3. Install Node.js
-
-Node.js is required to run and install Claude Code via `npm`. 
+If it is missing, install Apple's Command Line Tools:
 
 ```bash
-brew install node
+xcode-select --install
 ```
 
-Verify the installation:
+Complete the graphical installer, open a new Terminal window, and rerun `git --version`.
+
+## 3. Verify Bash
+
+macOS includes a compatible Bash version. Confirm that it is Bash 3.2 or later:
+
 ```bash
-node -v
-npm -v
+bash --version
 ```
+
+The first line must report version 3.2 or later.
 
 ## 4. Install Claude Code
 
-Claude Code is the primary agentic development tool used in this course. Install it globally using `npm`:
+Use Anthropic's recommended native installer:
 
 ```bash
-npm install -g @anthropic-ai/claude-code
+curl -fsSL https://claude.ai/install.sh | bash
 ```
 
-Verify the installation by checking its version:
+Open a new Terminal window after installation, then verify Claude Code:
+
 ```bash
 claude --version
 ```
 
-## 5. IDE / Editor
+A working installation prints a Claude Code version number. The native installation updates automatically.
 
-You can use your preferred IDE or text editor. Visual Studio Code is highly recommended.
+## 5. Authenticate Claude Code
+
+Claude Code requires an eligible Claude or Console account supplied or approved for the course. Start an interactive session:
 
 ```bash
-brew install --cask visual-studio-code
+claude
 ```
 
-## Next Steps
+Follow the browser prompts to sign in. Do not paste credentials, API keys, or access tokens into course files or support messages. Exit Claude Code after confirming that the session starts successfully.
 
-Once all installations are complete and verified, you are ready for the course! Return to the [Main Install Guide](./install.md).
+## 6. Install a code editor
+
+Use any editor you are comfortable with. Visual Studio Code is recommended and can be installed from its [official download page](https://code.visualstudio.com/Download).
+
+Open the editor once to confirm that it launches. Installing the optional `code` command in your shell is useful but not required.
+
+## 7. Run the course setup test
+
+From the repository root, run:
+
+```bash
+bash test-setup/verify.sh
+```
+
+The final line must be:
+
+```text
+SUCCESS: All required command-line tools are installed.
+```
+
+Then confirm the two manual checks printed by the script: Claude Code authentication and a working code editor.
+
+Return to the [main installation guide](install.md) if you need the setup overview.

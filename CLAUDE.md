@@ -1,26 +1,49 @@
 # Orchestration Fundamentals for Agentic Development — Setup
 
-Standalone environment setup and verification repository for participants of the four-hour course **Orchestration Fundamentals for Agentic Development**. Contains OS-specific installation guides and checklists to verify the required tools (Git, Node.js, Claude Code, IDE) are ready before class.
+Standalone pre-class installation and verification repository for the four-hour course **Orchestration Fundamentals for Agentic Development**. Students may receive this repository before other course materials are available.
 
-## Tech Stack
+## Course environment
 
-- **Primary Format:** Markdown
-- **Scripts:** Bash, Python
+- **Platforms:** macOS 13+ and Windows 10 version 1809+
+- **Course tools:** Git, Bash 3.2+, Claude Code, and a code editor
+- **Credentials:** An eligible Claude or Console account is required for the manual authentication check
+- **Not required:** Node.js, npm, Python, and third-party project packages
 
-## Project Structure
+## Repository structure
 
 | Path | Purpose |
 |:---|:---|
-| `install/` | OS-specific installation guides |
-| `llm-context/` | Stores context for LLM agents |
-| `scripts/` | Helper scripts (diagram/slide building) |
+| `catalog/` | Approved course outline copied without setup-specific edits |
+| `install/` | Main, macOS, and Windows installation guides |
+| `test-setup/` | Safe cross-platform command-line verification scripts and instructions |
+| `Welcome.md` | Student-facing pre-class message and checklist |
+| `README.md` | Concise repository entry point |
+| `llm-context/` | Local context folders for repository maintenance |
 
-## Key Commands
+The canonical validator is `test-setup/verify.sh`. `test-setup/verify.bat` locates Git Bash on Windows and delegates to the same script. The optional `package.json` and `test.js` launcher must not make Node.js a course prerequisite.
 
-None (Setup repository). Verification is manually driven via the checklist in `Welcome.md`.
+## Verification commands
+
+Run from the repository root:
+
+```bash
+bash test-setup/verify.sh
+```
+
+The success marker is:
+
+```text
+SUCCESS: All required command-line tools are installed.
+```
+
+Also run Markdown linting according to `.markdownlint.json` and check local links whenever documentation changes.
 
 ## Conventions
 
-- **Standalone Guides:** Keep setup instructions standalone; this repository may be distributed before the course companion is available.
-- **Links:** Ensure links to installation guides remain valid and relative.
-- **Linting:** Markdown is linted per `.markdownlint.json`.
+- Keep all student-facing material self-contained within this repository.
+- Do not name, link to, or require sibling repositories.
+- Do not include local machine paths, secrets, credentials, or environment files.
+- Keep `catalog/agentic-dev-4-hrs-am-pm-outline.md` byte-for-byte aligned with its approved source.
+- Keep tool names, commands, paths, and the success marker consistent across the guides, quickstart, welcome message, README, and this file.
+- Use absolute GitHub URLs in `Welcome.md`; use relative links in other Markdown files.
+- Preserve the separation between safe automated checks and manual authentication or graphical-editor checks.

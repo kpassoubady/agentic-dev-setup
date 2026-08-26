@@ -1,0 +1,9 @@
+{
+  "name": "orchestration-course-test-setup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Optional Node.js launcher for the course setup validator; Node.js is not required.",
+  "scripts": {
+    "test": "node test.js"
+  }
+}

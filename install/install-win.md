@@ -1,51 +1,85 @@
 # Windows Installation Guide
 
-Follow these steps to install the necessary tools and dependencies for the Orchestration Fundamentals for Agentic Development course on your Windows machine.
+Use these steps to prepare Windows for **Orchestration Fundamentals for Agentic Development**. The course labs run Bash scripts, so Git for Windows and its Git Bash terminal are required.
 
-## 1. Install Git
+## 1. Confirm the system requirements
 
-Git is required for version control and branching during the labs. We recommend installing Git for Windows.
+Claude Code requires Windows 10 version 1809 or later, 4 GB or more of memory, and internet access. Press `Win + R`, enter `winver`, and confirm the Windows version before continuing.
 
-- Download and install Git from: [https://git-scm.com/download/win](https://git-scm.com/download/win)
-- During installation, the default settings are generally fine.
+## 2. Install Git for Windows and Git Bash
 
-Verify the installation by opening Command Prompt or PowerShell and running:
-```cmd
+Install Git for Windows from the [official download page](https://git-scm.com/download/win). Keep the Git Bash component selected during installation.
+
+Close and reopen your terminals, then launch **Git Bash** from the Start menu. Run all remaining course verification commands in Git Bash unless a step explicitly says PowerShell.
+
+Verify Git:
+
+```bash
 git --version
 ```
 
-## 2. Install Node.js
+## 3. Verify Bash
 
-Node.js is required to run and install Claude Code via `npm`.
+In Git Bash, run:
 
-- Download the Windows Installer (.msi) for the LTS version from: [https://nodejs.org/](https://nodejs.org/)
-- Run the installer and follow the prompts (default settings are fine).
-
-Verify the installation:
-```cmd
-node -v
-npm -v
+```bash
+bash --version
 ```
 
-## 3. Install Claude Code
+The first line must report version 3.2 or later.
 
-Claude Code is the primary agentic development tool used in this course. Install it globally using `npm`:
+## 4. Install Claude Code
 
-```cmd
-npm install -g @anthropic-ai/claude-code
+Open PowerShell. You do not need to run it as Administrator. Use Anthropic's recommended native installer:
+
+```powershell
+irm https://claude.ai/install.ps1 | iex
 ```
 
-Verify the installation by checking its version:
-```cmd
+Close PowerShell and Git Bash, reopen Git Bash, and verify Claude Code:
+
+```bash
 claude --version
 ```
 
-## 4. IDE / Editor
+A working installation prints a Claude Code version number. The native installation updates automatically.
 
-You can use your preferred IDE or text editor. Visual Studio Code is highly recommended.
+## 5. Authenticate Claude Code
 
-- Download and install VS Code from: [https://code.visualstudio.com/](https://code.visualstudio.com/)
+Claude Code requires an eligible Claude or Console account supplied or approved for the course. In Git Bash, start an interactive session:
 
-## Next Steps
+```bash
+claude
+```
 
-Once all installations are complete and verified, you are ready for the course! Return to the [Main Install Guide](./install.md).
+Follow the browser prompts to sign in. Do not paste credentials, API keys, or access tokens into course files or support messages. Exit Claude Code after confirming that the session starts successfully.
+
+## 6. Install a code editor
+
+Use any editor you are comfortable with. Visual Studio Code is recommended and can be installed from its [official download page](https://code.visualstudio.com/Download).
+
+Open the editor once to confirm that it launches. Installing the optional `code` command in your shell is useful but not required.
+
+## 7. Run the course setup test
+
+From the repository root in Git Bash, run:
+
+```bash
+bash test-setup/verify.sh
+```
+
+You can also run the Windows Command Prompt wrapper:
+
+```bat
+test-setup\verify.bat
+```
+
+The final line must be:
+
+```text
+SUCCESS: All required command-line tools are installed.
+```
+
+Then confirm the two manual checks printed by the script: Claude Code authentication and a working code editor.
+
+Return to the [main installation guide](install.md) if you need the setup overview.

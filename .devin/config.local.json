@@ -79,7 +79,6 @@
     ],
     "additionalDirectories": [
       "/tmp",
-      "/Users/kangs/code/github",
       "/dev"
     ]
   }

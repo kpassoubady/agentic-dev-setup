@@ -1,15 +1,27 @@
 # Orchestration Fundamentals for Agentic Development — Setup
 
-Standalone environment setup and verification repository for participants of the four-hour course **Orchestration Fundamentals for Agentic Development**.
+This standalone repository contains the pre-class installation and verification materials for **Orchestration Fundamentals for Agentic Development**.
 
-Use this repository before class to confirm that the required terminal, Git, and Claude Code (or a similar AI coding assistant) workflow is ready.
+## Start here
 
-## Getting Started
+Read the [Welcome Guide](Welcome.md) and complete its checklist before class.
 
-Please see the [Welcome Guide](Welcome.md) for a checklist of required installations and setup steps before starting the course.
+## Setup resources
 
-## Installation Guides
+- [Course outline](catalog/agentic-dev-4-hrs-am-pm-outline.md)
+- [Main installation guide](install/install.md)
+- [macOS installation guide](install/install-mac.md)
+- [Windows installation guide](install/install-win.md)
+- [Course Setup Test](test-setup/README.md)
 
-- [Main Setup Document](install/install.md)
-- [macOS Installation Guide](install/install-mac.md)
-- [Windows Installation Guide](install/install-win.md)
+Run the verification project from the repository root:
+
+```bash
+bash test-setup/verify.sh
+```
+
+A ready command-line environment prints:
+
+```text
+SUCCESS: All required command-line tools are installed.
+```

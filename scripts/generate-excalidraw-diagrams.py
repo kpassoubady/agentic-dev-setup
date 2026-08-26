@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Excalidraw diagram source files for the copilot-advanced course.
+"""Generate Excalidraw diagram source files for course-maintenance artifacts.
 
 Creates .excalidraw JSON source files for course diagrams. These can be opened
 in Excalidraw for editing and exported to PNG/SVG for slide embeds.
@@ -13,7 +13,7 @@ import os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.join(SCRIPT_DIR, "..")
-DIAGRAMS_DIR = "/Users/kangs/code/github/copilot-advanced/slides/slides-2-day-am-pm/day2-session2/diagrams"
+DIAGRAMS_DIR = os.path.join(ROOT_DIR, "llm-context", "artifacts", "diagrams")
 
 # ── Colors (Excalidraw palette) ──────────────────────────────
 BLUE = "#a5d8ff"

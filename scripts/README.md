@@ -1,6 +1,6 @@
 # Scripts
 
-This folder contains build and export helpers for course slide decks, diagrams, and book assets.
+This folder contains maintainer-only build and export helpers for course slide decks, diagrams, and book assets. These scripts and their dependencies are not part of student setup or the pre-class verification workflow.
 
 ## Overview
 
@@ -10,7 +10,7 @@ This folder contains build and export helpers for course slide decks, diagrams, 
 | [`build-slides.sh`](#build-slidessh) | Convert Marp markdown slide decks to PDF | `slides/**/*.md` | `slides/pdf/**/*.pdf` |
 | [`export-slides.sh`](#export-slidessh) | Combine and export full course slide decks to PDF | `slides/slides-{1-day,2-day-am-pm,mobile}/` | `exports/slides-*.pdf` |
 | [`export-excalidraw.sh`](#export-excalidrawsh) | Export `.excalidraw` files to SVG/PNG | `book/diagrams/*.excalidraw` | `.excalidraw.svg`, `.excalidraw.png` |
-| [`generate-excalidraw-diagrams.py`](#generate-excalidraw-diagramspy) | Generate `.excalidraw` source files programmatically | Hard-coded diagram definitions | `slides/slides-2-day-am-pm/day2-session2/diagrams/*.excalidraw` |
+| [`generate-excalidraw-diagrams.py`](#generate-excalidraw-diagramspy) | Generate `.excalidraw` source files programmatically | Hard-coded diagram definitions | `llm-context/artifacts/diagrams/*.excalidraw` |
 | [`add-edge-casing.py`](#add-edge-casingpy) | Add a white halo/casing to Mermaid SVG connectors | `*.svg` (in place) | Same file, modified |
 | [`edge-casing.css`](#edge-casingcss) | CSS filter for PNG edge casing | Used by `mmdc` with `-C` | N/A |
 | [`print-color-adjust.css`](#print-color-adjustcss) | Force exact color rendering during PDF-to-SVG conversion | Used by `build-diagrams.sh` for the SVG PDF step (`-C` flag) | N/A |
@@ -147,7 +147,7 @@ python scripts/generate-excalidraw-diagrams.py
 
 ### Notes
 
-- The output directory is currently hard-coded to a course-specific path. Review `DIAGRAMS_DIR` at the top of the file before running.
+- The output directory is `llm-context/artifacts/diagrams/` within this repository.
 - The script defines diagrams per chapter (e.g., `ch01_token_pipeline`, `ch02_model_selection`) and writes them to `.excalidraw` files.
 
 ## add-edge-casing.py
