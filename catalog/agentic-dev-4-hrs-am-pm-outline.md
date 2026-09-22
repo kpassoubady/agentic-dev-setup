@@ -1,81 +1,99 @@
-# Orchestration Fundamentals for Agentic Development (2 Sessions × 4 Hours, Delivered Across 1 Day, AM/PM)
+# Orchestration Fundamentals for Agentic Development
 
-This course is for developers, tech leads, and engineers moving from single-prompt AI assistance to orchestrating multiple agents on larger tasks.
+## Course Details
 
-Participants should have experience using Claude Code or a similar AI coding assistant for development tasks, working knowledge of Git (creating branches, merging changes), and comfort navigating and running commands from a terminal.
+| Course detail | Value |
+| --- | --- |
+| Duration | 4 hours per cohort |
+| Audience | Developers, tech leads, and engineers who plan or delegate agentic development work |
+| Skill level | Intermediate |
+| Format | Instructor-led course with demonstrations, a quiz, and two breakout labs |
+| Primary tool | Claude Code |
 
-## 🗓️ Delivery Model: AM/PM Repeat
+## Delivery Model
 
 | | Day 1 |
-|---|---|
+| --- | --- |
 | **Morning Cohort** | Session 1 (AM) |
 | **Afternoon Cohort** | Session 1 (PM, repeated) |
 
-The instructor teaches the exact same four-hour session twice in one day. The morning cohort receives the material first, and the afternoon cohort receives an identical repeat of the curriculum.
+The instructor delivers the same four-hour session to both cohorts. The afternoon session repeats the morning instruction, demonstrations, quiz, labs, and outcomes without content changes.
 
 ## Course Overview
 
-This course introduces the core skills for planning and running multi-agent development work with Claude Code. Participants practice breaking features into agent-ready units of work, choosing the right model for each task, and running multiple agent sessions in parallel.
+Participants learn how to plan and run multi-agent development work with Claude Code. They begin by decomposing complex features into bounded, verifiable tasks. They then select models according to task complexity, risk, speed, and cost. The session closes with a parallel development workflow that coordinates agent sessions through explicit file boundaries, Git branches, durable handoffs, and integration checks.
 
 ## Main Topics Covered
 
-- Decomposing Complex Features for Multi-Agent Execution
-- Model Selection Strategy for Agentic Development
-- Orchestrating Multiple Agent Sessions
+- Decomposing complex features into agent-ready units of work
+- Selecting models according to task complexity, risk, speed, and cost
+- Coordinating parallel Claude Code sessions across related subtasks
 
 ## Learning Outcomes
 
-- Break down complex features into units of work suited for agent execution
-- Select an appropriate model for a task based on its complexity, risk, and cost
-- Run and coordinate multiple Claude Code sessions on related subtasks
+By the end of the session, participants will be able to:
 
-## Project Context / Tools
+- Break down complex features into units of work suited for agent execution.
+- Select an appropriate model for a task based on its complexity, risk, and cost.
+- Run and coordinate multiple Claude Code sessions on related subtasks.
 
-Participants use Claude Code, Git, and a standard terminal environment to interact with a shared codebase. They practice orchestration techniques on a sample project that requires splitting work across branches and merging agent-generated results.
+## Project Context and Tools
 
-## ⏰ Day 1 (4 Hours): Orchestration Fundamentals
+Participants use Claude Code, Git, and a prepared sample repository with independent snapshots for each lab. The course materials include feature briefs, repository maps, task cards, acceptance checks, and model profiles. Each lab starts from its own supplied artifacts, so learners can complete it without relying on earlier lab output.
 
-### 1. Welcome and Setup
+## Prerequisites
 
-### 2. Decomposing Complex Features for Multi-Agent Execution
+Participants should have:
 
-### 3. Breakout 1: Lab 1.1: Feature Decomposition
+- Experience using Claude Code or a similar AI coding assistant for development tasks
+- Working knowledge of Git, including creating branches and merging changes
+- Comfort using a terminal to inspect files and run commands
 
-### Bio Break
+## Session 1: Planning and Running Multi-Agent Development Work
 
-### 4. Model Selection Strategy for Agentic Development
+### 1. Decomposing Complex Features for Multi-Agent Execution
 
-### Kahoot 1
+#### Concept & Demo
 
-### Bio Break
+The instructor evaluates which tasks an agent can complete independently and which tasks require close human control. A feature brief is divided into bounded units with clear inputs, outputs, file ownership, dependencies, acceptance criteria, and verification commands. The demonstration shows how task size and shared-resource conflicts affect sequencing, then tests whether a separate agent can complete and verify each task without hidden context.
 
-### 5. Orchestrating Multiple Agent Sessions
+#### Breakout Lab 1.1: Agent-Ready Work Plan
 
-### 6. Breakout 2: Lab 1.2: Multi-Agent Orchestration
+Participants receive a standalone feature brief, repository map, and test command list. They divide the feature into agent-ready tasks, identify dependencies and shared files, and write acceptance criteria for each task. They finish by classifying tasks as parallel, sequential, or human-controlled.
 
-### 7. Wrap up and Q&A
+Lab outcome: A dependency-aware work plan with bounded task specifications, file ownership, acceptance criteria, and verification commands.
 
-Day 1 Deliverable: A decomposed feature plan and a successfully merged multi-agent development task
+### 2. Model Selection Strategy for Agentic Development
 
-### Day 1 (4 hours / 240 min)
+#### Concept & Demo
+
+The instructor compares model choices across routine edits, repository-wide reasoning, ambiguous debugging, and high-risk changes. The demonstration uses a selection matrix based on complexity, uncertainty, blast radius, verification cost, latency, and price. It also shows when evidence from a weaker model should trigger escalation to a stronger model instead of repeated retries.
+
+### 3. Orchestrating Multiple Agent Sessions
+
+#### Concept & Demo
+
+The instructor prepares parallel Claude Code sessions with separate Git branches or worktrees, explicit task specifications, and non-overlapping file boundaries. The demonstration covers shared context, progress tracking, handoff artifacts, dependency checkpoints, and integration order. It concludes by merging agent results, running acceptance checks, and resolving a simulated conflict without copying full chat histories between sessions.
+
+#### Breakout Lab 3.1: Parallel Agent Coordination
+
+Participants receive a fresh repository snapshot and two related task specifications. They prepare isolated workspaces, assign each task to a separate Claude Code session, and record file boundaries and dependency checkpoints. They inspect both results, complete a structured handoff, merge the changes in dependency order, and run the supplied acceptance checks.
+
+Lab outcome: An orchestration record containing workspace assignments, task boundaries, handoff evidence, merge order, acceptance results, and one documented human approval point.
+
+### Session Breakdown Table
 
 | Topic | Duration |
-|---|---|
-| 1. Welcome and Setup | 15 min |
-| 2. Decomposing Complex Features for Multi-Agent Execution | 35 min |
-| 3. Breakout 1: Lab 1.1: Feature Decomposition | 30 min |
+| --- | ---: |
+| Welcome & Course Intro & Setup  | 15 min |
+| 1. Decomposing Complex Features for Multi-Agent Execution: Concept & Demo | 45 min |
+| Lab 1.1: Agent-Ready Work Plan | 30 min |
 | Bio Break | 15 min |
-| 4. Model Selection Strategy for Agentic Development | 40 min |
-| Kahoot 1 | 10 min |
-| Bio Break | 15 min |
-| 5. Orchestrating Multiple Agent Sessions | 40 min |
-| 6. Breakout 2: Lab 1.2: Multi-Agent Orchestration | 30 min |
-| 7. Wrap up and Q&A | 10 min |
-| **Total** | 240 min |
-
-**Combined Total Duration: 240 min**
-
-## Deliverables (End of Course)
-
-- Feature decomposition plan with task specs and acceptance criteria
-- Merged multi-agent implementation in the shared codebase
+| 2. Model Selection Strategy for Agentic Development: Concept & Demo | 40 min |
+| Kahoot Quiz 1 | 15 min |
+| Bio Break | 10 min |
+| Mandatory Course Survey | 5 min |
+| 3. Orchestrating Multiple Agent Sessions: Concept & Demo | 20 min |
+| Lab 3.1: Parallel Agent Coordination | 30 min |
+| Course Wrap-up | 15 min |
+| **Total** | **4 hours** |

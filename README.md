@@ -1,27 +1,37 @@
-# Orchestration Fundamentals for Agentic Development — Setup
+# Orchestration Fundamentals for Agentic Development
 
-This standalone repository contains the pre-class installation and verification materials for **Orchestration Fundamentals for Agentic Development**.
+This is the standalone pre-class setup repository for **Orchestration Fundamentals for Agentic Development**. Use this repository to prepare and validate the tools required for the course before class. Learners need Claude Code, Git, Python 3, Node.js, and a terminal environment suitable for inspecting files, creating isolated branches or worktrees, merging changes, and running supplied acceptance checks.
 
-## Start here
+- **Start Here:** [Welcome Message](./Welcome.md)
+- **Course Outline:** [Detailed Course Outline](./catalog/agentic-dev-4-hrs-am-pm-outline.md)
 
-Read the [Welcome Guide](Welcome.md) and complete its checklist before class.
+## Installation Guides
 
-## Setup resources
+Step-by-step instructions for installing all required tools and dependencies:
 
-- [Course outline](catalog/agentic-dev-4-hrs-am-pm-outline.md)
-- [Main installation guide](install/install.md)
-- [macOS installation guide](install/install-mac.md)
-- [Windows installation guide](install/install-win.md)
-- [Course Setup Test](test-setup/README.md)
+- [Installation Overview](./install/install.md)
+- [macOS Installation Guide](./install/install-mac.md)
+- [Windows Installation Guide](./install/install-win.md)
 
-Run the verification project from the repository root:
+## Verify Your Setup
+
+Once you have completed the installation guides, run the [Verification Quickstart](./quickstart-project/README.md):
 
 ```bash
-bash test-setup/verify.sh
+cd quickstart-project
+python3 verify_setup.py
 ```
 
-A ready command-line environment prints:
+Expected success marker:
 
 ```text
-SUCCESS: All required command-line tools are installed.
+🎉 SUCCESS: All required tools are installed correctly!
 ```
+
+The legacy [`test-setup`](./test-setup/README.md) path remains available so links in previously distributed copies of `Welcome.md` and `Welcome.pdf` continue to work.
+
+## Expected Experience
+
+- Prior use of Claude Code or a similar AI coding assistant
+- Working knowledge of Git branches and merges
+- Comfort inspecting files and running commands in a terminal
