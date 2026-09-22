@@ -4,44 +4,39 @@ To ensure a smooth and productive learning experience, please complete the setup
 
 ## 📋 Course Overview
 
-Review the [course outline](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md) for the objectives and schedule.
-
-This is a four-hour course delivered twice in one day to separate morning and afternoon cohorts. You will use Claude Code, Git, Bash 3.2 or later, a standard terminal, and your preferred code editor to plan and coordinate multi-agent development work.
+- [Course Catalog](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md)
+- This is a 4-hour instructor-led course (delivered to AM and PM cohorts) where participants learn how to plan and run multi-agent development work using Git, Python 3, and Claude Code.
 
 ## 🛠️ Pre-Class Setup (Required)
 
-Start with the [installation guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md).
+- [Installation Guides](https://github.com/kpassoubady/agentic-dev-setup/tree/main/install)
 
 | Category | Tool |
-|:---|:---|
-| Version control | Git |
-| Shell | Bash 3.2 or later; Git Bash on Windows |
-| Agentic development | Claude Code with an eligible authenticated account |
-| Editor | Any code editor; Visual Studio Code recommended |
+| :--- | :--- |
+| Version Control | Git |
+| Runtime | Python 3 |
+| Agent | Claude Code (Requires Node.js) |
 
-Follow the operating-system-specific instructions for macOS or Windows. After installing the tools, open the [verification project](https://github.com/kpassoubady/agentic-dev-setup/tree/main/test-setup) and run `bash test-setup/verify.sh` from the repository root.
+Please see the OS-specific instructions for macOS and Windows in the installation guides. We have also provided a [Verification Quickstart](https://github.com/kpassoubady/agentic-dev-setup/tree/main/quickstart-project) project. Please run this quickstart to confirm your setup.
 
 ## ✅ Checklist Before Class
 
-- [ ] Confirm that your computer meets the operating-system, memory, and internet requirements in the installation guide.
-- [ ] Install Git and confirm that `git --version` prints a version.
-- [ ] Confirm that `bash --version` reports Bash 3.2 or later.
-- [ ] Install Claude Code with the native installer and confirm that `claude --version` prints a version.
-- [ ] Run `claude` and complete authentication with the account approved for the course.
-- [ ] Install and open your preferred code editor.
-- [ ] Run `bash test-setup/verify.sh` from the repository root.
-- [ ] Confirm that the test prints `SUCCESS: All required command-line tools are installed.`
+- [ ] Install Git
+- [ ] Install Python 3
+- [ ] Install Node.js
+- [ ] Install Claude Code
+- [ ] Run `cd quickstart-project && python3 verify_setup.py` from the repository root
+- [ ] Verify you see the expected output: `🎉 SUCCESS: All required tools are installed correctly!`
 
 ## 📚 Quick Links
 
 | Resource | Link |
-|:---|:---|
-| Course outline | [View outline](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md) |
-| Installation guide | [View guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md) |
-| macOS guide | [View macOS instructions](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-mac.md) |
-| Windows guide | [View Windows instructions](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-win.md) |
-| Verification project | [Open setup test](https://github.com/kpassoubady/agentic-dev-setup/tree/main/test-setup) |
-| Verification instructions | [View setup test README](https://github.com/kpassoubady/agentic-dev-setup/blob/main/test-setup/README.md) |
+| :--- | :--- |
+| Course Catalog | [View Outline](https://github.com/kpassoubady/agentic-dev-setup/blob/main/catalog/agentic-dev-4-hrs-am-pm-outline.md) |
+| Installation Guide (Main) | [View Install Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install.md) |
+| macOS Installation Guide | [macOS Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-mac.md) |
+| Windows Installation Guide | [Windows Guide](https://github.com/kpassoubady/agentic-dev-setup/blob/main/install/install-win.md) |
+| Verification Quickstart | [Quickstart Project](https://github.com/kpassoubady/agentic-dev-setup/tree/main/quickstart-project) |
 
 ## 🆘 Need Help?
 
